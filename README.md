@@ -5,7 +5,7 @@ Spark to Otter Dataframe Python library
 
 ## Exemplo de Uso
 
-<div style="border: 1px solid #e1e4e8; padding: 16px; border-radius: 8px; background-color: black; color: #fff">
+<div style="border: 1px solid #e1e4e8; padding: 16px; border-radius: 8px; background-color: #000; color: #fff">
 if __name__ == "__main__":
     from pyspark.sql import SparkSession
 
@@ -37,17 +37,4 @@ if __name__ == "__main__":
     print("Join:")
     print(joined_df)
 
-</div>
-
-## Box com Fundo Colorido
-
-<div style="border: 1px solid #e1e4e8; padding: 16px; border-radius: 8px; background-color: #f9f9f9;">
-  Este é um box com fundo colorido.
-</div>
-
-## Box Personalizado
-
-<div style="border: 2px solid #4CAF50; padding: 20px; border-radius: 10px; background-color: #e7f4e4;">
-  <h2 style="color: #4CAF50;">Título do Box</h2>
-  <p>Este é um box personalizado.</p>
 </div>
