@@ -1,2 +1,2 @@
 # pyOtter
-Dataframe Python library
+Spark to Otter Dataframe Python library
