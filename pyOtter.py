@@ -1,3 +1,4 @@
+# Criado por: Gustavo Riz
 class pyOtter:
     def __init__(self, data=None, columns=None):
         self.data = data if data is not None else []
