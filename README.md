@@ -1,7 +1,7 @@
 # pyOtter
 Spark to Otter Dataframe Python library
 
-![pyOtte](caminho/para/sua-imagem.png)
+![pyOtte](https://github.com/gustavoriz/pyOtter/blob/8d2f26367815f193aec553c9bd19da3780f56693/pyOtter.jpeg)
 
 ## Exemplo de Uso
 
