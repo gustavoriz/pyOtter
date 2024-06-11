@@ -1,6 +1,11 @@
 # pyOtter
 <img src='https://github.com/gustavoriz/pyOtter/blob/b4a04323eb233184213d913d2e349a9b208dba7c/PyOtter.png' width='80%' align='center'>
 
+### Sobre a pyOtter:
+
+* As funções foram projetadas para tornar a manipulação de DataFrames mais intuitiva e prática, semelhante às operações realizadas com DataFrames em bibliotecas populares como pandas e Spark.
+* A biblioteca pyOtter é útil para aqueles que precisam converter e manipular dados entre diferentes formatos de DataFrame, especialmente ao integrar operações Spark com operações nativas em Python.
+
 ## Exemplos de uso
 ### Contagem de linhas em um DataFrame
 ```
@@ -50,10 +55,6 @@ df2 = ... # Outro DataFrame pyOtter
 joined_df = df.join(df2, on='common_column', how='inner')
 # Realiza uma junção inner baseada na coluna 'common_column'
 ```
-### Observação:
-
-* As funções foram projetadas para tornar a manipulação de DataFrames mais intuitiva e prática, semelhante às operações realizadas com DataFrames em bibliotecas populares como pandas e Spark.
-* A biblioteca pyOtter é útil para aqueles que precisam converter e manipular dados entre diferentes formatos de DataFrame, especialmente ao integrar operações Spark com operações nativas em Python.
 
 ## Funções do pyOtter
 
