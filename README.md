@@ -1,5 +1,5 @@
 # pyOtter
-<img src='https://github.com/gustavoriz/pyOtter/blob/b3fffb1474834beffd33d4bdb0fbd2cd2bc20ea2/pyOtter.png' width='80%' align='center'>
+<center><img src='https://github.com/gustavoriz/pyOtter/blob/25523db025ce7e7f8d82505d67c30c9eeaa5a32a/pyOtter.png' width='80%' align='center'></center>
 
 ### Sobre a pyOtter:
 
