@@ -12,6 +12,14 @@ class pyOtter:
         data = [row.asDict() for row in spark_df.collect()]
         return cls(data, columns)
 
+    def from_big_spark_dataframe(cls, spark_df):
+        def process_partition(iterator):
+            return [row.asDict() for row in iterator]
+
+        data = spark_df.rdd.mapPartitions(process_partition).reduce(lambda x, y: x + y)
+        columns = spark_df.columns
+        return cls(data, columns)
+
     def from_pandas_dataframe(cls, pandas_df):
         columns = pandas_df.columns.tolist()
         data = pandas_df.to_dict(orient='records')
