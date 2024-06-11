@@ -5,7 +5,11 @@ Spark to Otter Dataframe Python library
 
 ## Funções do pyOtter
 
-> __init__(self, data=None, columns=None):
+### __init__(self, data=None, columns=None):
+
+```python
+def count_rows(self):
+    return len(self.data)
 
 Inicializa um objeto pyOtter com dados e colunas. Se nenhum dado ou coluna for fornecido, inicializa com listas vazias.
 from_spark_dataframe(cls, spark_df):
