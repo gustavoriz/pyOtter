@@ -93,7 +93,7 @@ joined_df = df.join(df2, on='common_column', how='inner')
 
 <strong>from_big_spark_dataframe(cls, spark_df):</strong>
 
-* Essta classe utiliza o método mapPartitions com redução final, minimizando a transferência de dados entre o driver e os executores, o que é importante para grandes conjuntos de dados. Essa função irá processar cada partição do DataFrame do Spark em paralelo nos executores, convertendo cada linha em um dicionário. Em seguida, ele irá reduzir todas as partições em uma única lista de dicionários. Isso minimiza a quantidade de dados transferidos entre o driver e os executores, o que é crucial para otimizar o desempenho em grandes conjuntos de dados.
+* Esta classe utiliza o método mapPartitions com redução final, minimizando a transferência de dados entre o driver e os executores, o que é importante para grandes conjuntos de dados. Essa função irá processar cada partição do DataFrame do Spark em paralelo nos executores, convertendo cada linha em um dicionário. Em seguida, ele irá reduzir todas as partições em uma única lista de dicionários. Isso minimiza a quantidade de dados transferidos entre o driver e os executores, o que é crucial para otimizar o desempenho em grandes conjuntos de dados.
 
 <strong>from_pandas_dataframe(cls, spark_df):</strong>
 
