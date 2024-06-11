@@ -11,6 +11,17 @@ class pyOtter:
         columns = spark_df.columns
         data = [row.asDict() for row in spark_df.collect()]
         return cls(data, columns)
+
+    def from_pandas_dataframe(cls, pandas_df):
+        columns = pandas_df.columns.tolist()
+        data = pandas_df.to_dict(orient='records')
+        return cls(data, columns)
+
+    def to_pandas_dataframe(self):
+        return pd.DataFrame(self.data, columns=self.columns)
+
+    def to_spark_dataframe(self, spark_session):
+        return spark_session.createDataFrame(self.data)
     
     def count_rows(self):
         return len(self.data)
