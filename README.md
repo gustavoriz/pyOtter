@@ -54,6 +54,14 @@ Spark to Otter Dataframe Python library
 * Retorna uma representação em string do DataFrame, exibindo as colunas e suas respectivas linhas de dados, tabuladas.
 
 ## Exemplos de uso
+### Renomear colunas
+````
+def rename_columns(self, col_rename_map):
+    self.columns = [col_rename_map.get(col, col) for col in self.columns]
+    for row in self.data:
+        for old_col, new_col in col_rename_map.items():
+            if old_col in row:
+                row[new_col] = row.pop(old_col)
 
-n (````python ... ````):
+````
 Exibe o código Python das funções de maneira formatada e destacada.
