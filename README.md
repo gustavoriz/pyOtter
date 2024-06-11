@@ -55,7 +55,7 @@ Spark to Otter Dataframe Python library
 
 ## Exemplos de uso
 ### Renomear colunas
-````
+```
 def rename_columns(self, col_rename_map):
     self.columns = [col_rename_map.get(col, col) for col in self.columns]
     for row in self.data:
@@ -63,5 +63,5 @@ def rename_columns(self, col_rename_map):
             if old_col in row:
                 row[new_col] = row.pop(old_col)
 
-````
+```
 Exibe o código Python das funções de maneira formatada e destacada.
