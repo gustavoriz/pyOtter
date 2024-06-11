@@ -137,3 +137,7 @@ joined_df = df.join(df2, on='common_column', how='inner')
 <strong>__str__(self):</strong>
 
 * Retorna uma representação em string do DataFrame, exibindo as colunas e suas respectivas linhas de dados, tabuladas.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
