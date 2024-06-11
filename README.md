@@ -7,11 +7,31 @@
 * A biblioteca pyOtter é útil para aqueles que precisam converter e manipular dados entre diferentes formatos de DataFrame, especialmente ao integrar operações Spark com operações nativas em Python.
 
 ## Exemplos de uso
+### Convertendo um Dataframe Spark para um Dataframe pyOtter
+```
+df = pyOtter.from_spark_dataframe(spark_df)
+print(df)
+```
+### Convertendo um Dataframe pyOtter para um Dataframe Spark
+```
+spark_df = df.to_spark_dataframe(spark)
+spark_df.show()
+```
+### Convertendo um Dataframe Pandas para um Dataframe pyOtter
+```
+df = pyOtter.from_pandas_dataframe(pandas_df)
+print(df)
+```
+### Convertendo um Dataframe pyOtter para um Dataframe Pandas
+```
+pandas_df_back = df.to_pandas_dataframe()
+print(pandas_df_back)
+```
+
 ### Contagem de linhas em um DataFrame
 ```
 df.count_rows()
 # Saída: Número de linhas no DataFrame
-
 ```
 
 ### Renomear colunas
@@ -65,6 +85,18 @@ joined_df = df.join(df2, on='common_column', how='inner')
 <strong>from_spark_dataframe(cls, spark_df):</strong>
 
 * Classe de método que cria um objeto pyOtter a partir de um DataFrame Spark, convertendo os dados do Spark em um formato de dicionário Python.
+
+<strong>from_pandas_dataframe(cls, spark_df):</strong>
+
+* Classe de método que cria um objeto pyOtter a partir de um DataFrame Pandas, convertendo os dados do Pandas em um formato de dicionário Python.
+
+<strong>to_pandas_dataframe(self)</strong>
+
+* Este método de instância converte o DataFrame pyOtter em um DataFrame pandas.
+
+<strong>to_spark_dataframe(self)</strong>
+
+* Este método de instância converte o DataFrame pyOtter em um DataFrame spark.
 
 <strong>count_rows(self):</strong>
 
