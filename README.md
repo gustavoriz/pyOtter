@@ -7,7 +7,7 @@
 * A biblioteca pyOtter é útil para aqueles que precisam converter e manipular dados entre diferentes formatos de DataFrame, especialmente ao integrar operações Spark com operações nativas em Python.
 
 ## Exemplos de uso
-### Convertendo um Dataframe Spark para um Dataframe pyOtter
+### Convertendo um pequeno Dataframe Spark para um Dataframe pyOtter
 ```
 df = pyOtter.from_spark_dataframe(spark_df)
 print(df)
