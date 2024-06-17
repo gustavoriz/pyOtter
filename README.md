@@ -5,6 +5,7 @@
 
 * As funções foram projetadas para tornar a manipulação de DataFrames mais intuitiva e prática, semelhante às operações realizadas com DataFrames em bibliotecas populares como pandas e Spark.
 * A biblioteca pyOtter é útil para aqueles que precisam converter e manipular dados entre diferentes formatos de DataFrame, especialmente ao integrar operações Spark com operações nativas em Python.
+* O pyOtter não é adequado para processamento de grandes volumes de dados que excedem a memória RAM disponível. Para isso, é recomendada a sua utilização em conjunto com outros mecanismos, como clusters do Spark, aplicando filtros em Big Datas, diminuindo os DataFrames, para então utilizar as funções do pyOtter.
 
 ## Exemplos de uso
 ### Convertendo um pequeno Dataframe Spark para um Dataframe pyOtter
