@@ -8,7 +8,7 @@
 * O pyOtter não é adequado para processamento de grandes volumes de dados que excedem a memória RAM disponível. Para isso, é recomendada a sua utilização em conjunto com outros mecanismos, como o uso de clusters do Spark para filtrar e reduzir Big Datas, para então utilizar as funções do pyOtter. O uso conjunto com o pyOtter pode tornar um código Spark mais performático.
 
 ## Exemplos de uso
-### Convertendo um pequeno Dataframe Spark para um Dataframe pyOtter
+### Convertendo um Dataframe Spark para um Dataframe pyOtter
 ```
 df = pyOtter.from_spark_dataframe(spark_df)
 print(df)
